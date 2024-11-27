@@ -2,14 +2,14 @@ import heapq
 
 # Grafo representado como un diccionario con las distancias entre ciudades
 grafo = {
-    "Palencia": {"Madrid": 239, "Santander": 203},
+    "Palencia": {"Madrid": 239, "Santander": 203, "Cáceres":368},
     "Madrid": {"Zaragoza": 322, "Cáceres": 299, "Valencia": 350, "Palencia": 239},
-    "Zaragoza": {"Barcelona": 323, "Valencia": 352, "Madrid": 322, "Bilbao": 323},
-    "Cáceres": {"Madrid": 299},
-    "Valencia": {"Madrid": 350, "Zaragoza": 352},
+    "Zaragoza": {"Barcelona": 299, "Madrid": 322, "Bilbao": 323},
+    "Cáceres": {"Madrid": 299, "Palencia": 368},
+    "Valencia": {"Madrid": 350, "Barcelona": 352},
     "Santander": {"Palencia": 203, "Bilbao": 111},
     "Bilbao": {"Santander": 111, "Zaragoza": 323},
-    "Barcelona": {"Zaragoza": 323},
+    "Barcelona": {"Zaragoza": 299, "Valencia": 352},
 }
 
 # Distancias aéreas estimadas hacia Barcelona
